@@ -1,5 +1,3 @@
-batman
-bat
-ironman
-iron
-spiderman
+200
+162
+98

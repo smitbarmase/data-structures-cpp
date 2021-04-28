@@ -25,6 +25,9 @@ using namespace std;
 // Output
 // 734
 
+// Calculation
+// (1000/2) + (1000/3) + (1000/5) - (1000/2*3) - (1000/5*3) - (1000/5*2) + (1000/3*5*2) = 734
+
 void subset(int i, int arr[], int n, int k, int &result)
 {
     int j = 0, count = 0;

@@ -3,6 +3,15 @@ Use `ctrl + shift + b` to run task.
 Layout using `npx create-layout`:
 
 ```
+├─.git
+├─.gitignore
+├─.vscode
+│ ├─settings.json
+│ └─tasks.json
+├─README.md
+├─input.txt
+├─output.txt
+├─snippet.json
 └─src
   ├─bit-manipulation
   │ ├─bit-tasks.cpp
@@ -15,15 +24,23 @@ Layout using `npx create-layout`:
   │ ├─unique-number-2.cpp
   │ ├─unique-number-3.cpp
   │ └─unique-number.cpp
-  ├─linear-recurrences
-  │ └─fast-exponentiation.cpp
-  ├─math-combinatorics
+  ├─combinatorics
   │ └─birthday-paradox.cpp
+  ├─linear-recurrences
+  │ └─binary-exponentiation.cpp
   ├─others
   │ ├─activity-selection.cpp
   │ ├─biggest-permutation.cpp
   │ ├─binary-to-decimal.cpp
   │ └─coin-change.cpp
+  ├─pigeonhole-principle
+  │ ├─divisible-subarrays.cpp
+  │ └─holiday-accomodation-!.cpp
+  ├─primes-and-factorization
+  │ ├─bitset-sieve.cpp
+  │ ├─is-prime-bitset-sieve.cpp
+  │ ├─prime-between-a-and-b.cpp
+  │ └─sieve-of-eratosthenes.cpp
   └─stl
     ├─hostel-visit.cpp
     ├─median-of-sorted.cpp

@@ -6,7 +6,6 @@ Layout using `npx create-layout`:
 ├─.git
 ├─.gitignore
 ├─.vscode
-│ ├─settings.json
 │ └─tasks.json
 ├─README.md
 ├─input.txt
@@ -37,9 +36,14 @@ Layout using `npx create-layout`:
   │ ├─divisible-subarrays.cpp
   │ └─holiday-accomodation-!.cpp
   ├─primes-and-factorization
+  │ ├─almost-prime.cpp
   │ ├─bitset-sieve.cpp
-  │ ├─is-prime-bitset-sieve.cpp
+  │ ├─count-divisors.cpp
+  │ ├─large-prime-check.cpp
   │ ├─prime-between-a-and-b.cpp
+  │ ├─prime-factorization-using-sieve.cpp
+  │ ├─prime-factorization.cpp
+  │ ├─segmented-prime-sieve.cpp
   │ └─sieve-of-eratosthenes.cpp
   └─stl
     ├─hostel-visit.cpp

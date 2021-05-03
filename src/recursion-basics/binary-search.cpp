@@ -16,22 +16,20 @@ using namespace std;
 
 int binary_search(int *arr, int l, int r, int s)
 {
-    // base case
-    if (l == r)
+    if (r >= l)
     {
-        return s == arr[l] ? l : -1;
+        int m = l + (r - l) / 2;
+
+        if (arr[m] == s)
+            return m;
+
+        if (arr[m] > s)
+            return binary_search(arr, l, m - 1, s);
+
+        return binary_search(arr, m + 1, r, s);
     }
-    // recursive case
-    int m = (l + r) / 2;
-    if (s == arr[m])
-    {
-        return m;
-    }
-    else if (s < arr[m])
-    {
-        return binary_search(arr, 0, m, s);
-    }
-    return binary_search(arr, m + 1, r, s);
+
+    return -1;
 }
 
 void solve()

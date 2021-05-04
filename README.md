@@ -3,14 +3,6 @@ Use `ctrl + shift + b` to run task.
 Layout using `npx create-layout`:
 
 ```
-├─.git
-├─.gitignore
-├─.vscode
-│ └─tasks.json
-├─README.md
-├─input.txt
-├─output.txt
-├─snippet.json
 └─src
   ├─bit-manipulation
   │ ├─bit-tasks.cpp
@@ -25,13 +17,23 @@ Layout using `npx create-layout`:
   │ └─unique-number.cpp
   ├─combinatorics
   │ └─birthday-paradox.cpp
-  ├─linear-recurrences
-  │ └─binary-exponentiation.cpp
-  ├─others
+  ├─extra
   │ ├─activity-selection.cpp
   │ ├─biggest-permutation.cpp
   │ ├─binary-to-decimal.cpp
   │ └─coin-change.cpp
+  ├─gcd-and-extended-euclidean
+  │ ├─extended-euclidean.cpp
+  │ └─gcd-and-lcm.cpp
+  ├─linear-diophantine-equation
+  │ └─the-football-season!.cpp
+  ├─linear-recurrences
+  │ └─binary-exponentiation.cpp
+  ├─modulo
+  │ ├─big-gcd.cpp
+  │ ├─inverse-modulo.cpp
+  │ ├─modulo-exponentiation.cpp
+  │ └─yet-another-counting-problem!.cpp
   ├─pigeonhole-principle
   │ ├─divisible-subarrays.cpp
   │ └─holiday-accomodation-!.cpp
@@ -39,12 +41,28 @@ Layout using `npx create-layout`:
   │ ├─almost-prime.cpp
   │ ├─bitset-sieve.cpp
   │ ├─count-divisors.cpp
+  │ ├─factorial-problem.cpp
   │ ├─large-prime-check.cpp
   │ ├─prime-between-a-and-b.cpp
   │ ├─prime-factorization-using-sieve.cpp
   │ ├─prime-factorization.cpp
+  │ ├─product-of-three.cpp
   │ ├─segmented-prime-sieve.cpp
   │ └─sieve-of-eratosthenes.cpp
+  ├─recursion-basics
+  │ ├─all-occurence.cpp
+  │ ├─binary-search.cpp
+  │ ├─bubble-sort.cpp
+  │ ├─factorial.cpp
+  │ ├─fast-power.cpp
+  │ ├─fibonacci.cpp
+  │ ├─first-occurence.cpp
+  │ ├─increasing-decreasing.cpp
+  │ ├─inversion-count.cpp
+  │ ├─is-sorted.cpp
+  │ ├─last-occurence.cpp
+  │ ├─merge-sort.cpp
+  │ └─quick-sort.cpp
   └─stl
     ├─hostel-visit.cpp
     ├─median-of-sorted.cpp

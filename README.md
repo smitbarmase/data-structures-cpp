@@ -1,6 +1,14 @@
+## How to start
+
+Make `input.txt` and `output.txt` in root.
+
+## Build
+
 Use `ctrl + shift + b` to run task.
 
-Layout using `npx create-layout`:
+## Layout
+
+Created using `npx create-layout`
 
 ```
 └─src

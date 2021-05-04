@@ -1,12 +1,14 @@
-## How to start
+### 🧐 How to start
 
-Make `input.txt` and `output.txt` in root.
+- Make `input.txt` and `output.txt` in root.
 
-## Build
+- `tasks.json` takes input from `input.txt` and output it in `output.txt`.
 
-Use `ctrl + shift + b` to run task.
+### 🚀 How to build
 
-## Layout
+- Use `ctrl + shift + b` to run task.
+
+### 🧠 Topic-wise problems
 
 Created using `npx create-layout`
 

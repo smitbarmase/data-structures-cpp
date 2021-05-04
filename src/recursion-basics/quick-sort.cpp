@@ -14,6 +14,24 @@ using namespace std;
 #define mod 1000000007
 #define inf 1e18
 
+int partition(int *arr, int l, int r)
+{
+    int pivot = arr[r];
+    int i = l - 1;
+    int j = l;
+    while (j <= r - 1)
+    {
+        if (arr[j] <= pivot)
+        {
+            i++;
+            swap(arr[i], arr[j]);
+        }
+        j++;
+    }
+    swap(arr[i + 1], arr[r]);
+    return i + 1;
+}
+
 void quick_sort(int *arr, int l, int r)
 {
     //  Base case
@@ -22,34 +40,10 @@ void quick_sort(int *arr, int l, int r)
         return;
     }
 
-    // Selecting pivot
-    int p = r;
-
-    // Seperating elements based on pivot
-    int i = l, j = l;
-    while (i <= p - 1)
-    {
-        if (arr[i] < arr[p])
-        {
-            if (i != j)
-            {
-                swap(arr[j], arr[i]);
-            }
-            i++;
-            j++;
-        }
-        else
-        {
-            i++;
-        }
-    }
-
-    // Putting pivot element at its place
-    swap(arr[j], arr[p]);
-
-    // Sort sub problems
-    quick_sort(arr, l, j - 1);
-    quick_sort(arr, j + 1, r);
+    // Recursion case
+    int p = partition(arr, l, r);
+    quick_sort(arr, l, p - 1);
+    quick_sort(arr, p + 1, r);
 }
 void solve()
 {

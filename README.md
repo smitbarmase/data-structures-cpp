@@ -8,7 +8,7 @@
 
 - Use `ctrl + shift + b` to run task.
 
-### 🧠 Topic-wise problems
+### 🧠 Topic-wise problems (52)
 
 Created using `npx create-layout`
 

@@ -40,7 +40,7 @@ void solve()
 {
     int n;
     cin >> n;
-    cout << ways_to_tile(4) << endl;
+    cout << ways_to_tile(n) << endl;
 }
 
 int32_t main()

@@ -25,20 +25,20 @@ void generate_strings(int *arr, int n, char *out, int j)
     }
 
     // recursive case
-    int num = 0;
-    for (int k = 1; k <= n; k++, num *= 10)
+    int digit;
+    // single letter
+    digit = arr[0];
+    out[j] = 'A' - 1 + digit;
+    generate_strings(arr + 1, n - 1, out, j + 1);
+
+    // double letter
+    if (n >= 2)
     {
-        // Starting number
-        num += arr[k - 1];
-        out[j] = 'A' + num - 1;
-        if (num <= 26)
+        digit = arr[0] * 10 + arr[1];
+        if (digit <= 26)
         {
-            // Generating remaining string
-            generate_strings(arr + k, n - k, out, j + 1);
-        }
-        else
-        {
-            break;
+            out[j] = 'A' - 1 + digit;
+            generate_strings(arr + 2, n - 2, out, j + 1);
         }
     }
 }

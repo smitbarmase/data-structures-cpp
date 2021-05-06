@@ -36,78 +36,86 @@ using namespace std;
 // 12
 // 18
 
-int find_path(int *ld, int *rd, int &m, int i, bool left)
+int ans;
+int n, m;
+int ld[20], rd[20];
+string matrix[20];
+
+void find_path(bool right, int i, int val)
 {
     // Base case
-    if (i == 0)
+    if (i == n - 1)
     {
-        if (left)
+        if (right)
         {
-            return ld[i];
+            ans = min(ans, val + rd[i]);
         }
-        return rd[i];
+        else
+        {
+            ans = min(ans, val + ld[i]);
+        }
+        return;
     }
-
     // Recursive case
-    // If going up from left
-    if (left)
+    if (right)
     {
-        int left_to_left = (2 * ld[i]) + find_path(ld, rd, m, i - 1, true); // 8 + 2 = 10
-        int left_to_right = m + 1 + find_path(ld, rd, m, i - 1, false);     // 5 + 3 = 8
-        return 1 + min(left_to_left, left_to_right);                        // 1 + min(8, 10) = 9
+        find_path(0, i + 1, val + m + 2);
+        find_path(1, i + 1, val + 2 * rd[i] + 1);
     }
-    // If going up from right
-    int right_to_left = m + 1 + find_path(ld, rd, m, i - 1, true);         // 5 + 2 = 7
-    int right_to_right = (2 * rd[i]) + find_path(ld, rd, m, i - 1, false); // 2 + 3 = 5
-    return 1 + min(right_to_left, right_to_right);                         // 1 + min(7, 5) = 6
+    else
+    {
+        find_path(0, i + 1, val + 2 * ld[i] + 1);
+        find_path(1, i + 1, val + m + 2);
+    }
 }
 
 void solve()
 {
-    int n, m;
     cin >> n >> m;
-    string matrix[101];
-    for (int i = 0; i < n; i++)
+    for (int i = n - 1; i >= 0; i--)
     {
         cin >> matrix[i];
     }
 
-    int ld[n], rd[n];
-
-    // Generating prefix distance of last room in each row
+    int tmp = -1;
+    // Generating prefix distance  each row
     for (int i = 0; i < n; i++)
     {
-        int first_digit_from_right = 0;
-        int last_digit_from_left = 0;
-
-        int num = (int)bitset<16>(matrix[i]).to_ulong();
-        while (num > 0)
+        for (int j = 0; j < matrix[i].length(); j++)
         {
-            first_digit_from_right++;
-            num = num >> 1;
+            // last digit from left
+            if (matrix[i][j] == '1')
+            {
+                ld[i] = max(j, ld[i]);
+            }
+            // first digit from right
+            if (matrix[i][m + 1 - j] == '1')
+            {
+                rd[i] = max(rd[i], j);
+            }
         }
-        num = (int)bitset<16>(matrix[i]).to_ulong();
-        while (!(num & 1))
+        if (ld[i])
         {
-            last_digit_from_left++;
-            num = num >> 1;
+            tmp = i;
         }
-        rd[i] = first_digit_from_right - 1;
-        ld[i] = m + 1 - last_digit_from_left;
+    }
+    n = tmp + 1;
+    if (n == 0)
+    {
+        cout << 0 << endl;
+        return;
+    }
+    if (n == 1)
+    {
+        cout << ld[0] << endl;
+        return;
     }
 
-    // Dry run for:
-    // 3 4
-    // 001000
-    // 000010
-    // 000010
-    // Should return 12
-
     // Ground floor
-    int left_to_left = (2 * ld[n - 1]) + find_path(ld, rd, m, n - 2, true); // 8 + 9 = 17
-    int left_to_right = m + 1 + find_path(ld, rd, m, n - 2, false);         // 5 + 6 = 11
-
-    cout << 1 + min(left_to_left, left_to_right) << endl; // 1 + min(17, 11) = 12
+    ans = LONG_LONG_MAX;
+    find_path(0, 1, 2 * ld[0] + 1);
+    find_path(1, 1, m + 2);
+    cout << ans << endl;
 }
 
 int32_t main()

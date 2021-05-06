@@ -8,7 +8,7 @@
 
 - Use `ctrl + shift + b` to run task.
 
-### 🧠 Topic-wise problems (52)
+### 🧠 Topic-wise problems (74)
 
 Created using `npx create-layout`
 
@@ -59,6 +59,18 @@ Created using `npx create-layout`
   │ ├─product-of-three.cpp
   │ ├─segmented-prime-sieve.cpp
   │ └─sieve-of-eratosthenes.cpp
+  ├─recursion-advanced-backtracking
+  │ ├─n-queen-all.cpp
+  │ ├─n-queen-bitmasking.cpp
+  │ ├─n-queen-count.cpp
+  │ ├─n-queen-optimization.cpp
+  │ └─sagheer-hausmeister.cpp
+  ├─recursion-backtracking
+  │ ├─n-queen.cpp
+  │ ├─permutations.cpp
+  │ ├─rat-in-a-maze.cpp
+  │ ├─sudoku-solver.cpp
+  │ └─unique-permutations.cpp
   ├─recursion-basics
   │ ├─all-occurence.cpp
   │ ├─binary-search.cpp
@@ -73,6 +85,20 @@ Created using `npx create-layout`
   │ ├─last-occurence.cpp
   │ ├─merge-sort.cpp
   │ └─quick-sort.cpp
+  ├─recursion-quick-thinking
+  │ ├─2048-problem.cpp
+  │ ├─friends-problem.cpp
+  │ ├─ladders-problem.cpp
+  │ ├─optimal-binary-strings.cpp
+  │ ├─string-to-integer.cpp
+  │ ├─tiling-problem.cpp
+  │ └─tower-of-hanoi.cpp
+  ├─recursion-subset-based
+  │ ├─01knapsack.cpp
+  │ ├─generate-brackets.cpp
+  │ ├─generate-strings.cpp
+  │ ├─generate-subsets.cpp
+  │ └─phone-keypad.cpp
   └─stl
     ├─hostel-visit.cpp
     ├─median-of-sorted.cpp

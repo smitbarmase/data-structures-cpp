@@ -36,12 +36,7 @@ using namespace std;
 // 12
 // 18
 
-int ans;
-int n, m;
-int ld[20], rd[20];
-string matrix[20];
-
-void find_path(bool right, int i, int val)
+void find_path(int *ld, int *rd, int &m, int &n, int &ans, bool right, int i, int val)
 {
     // Base case
     if (i == n - 1)
@@ -59,23 +54,29 @@ void find_path(bool right, int i, int val)
     // Recursive case
     if (right)
     {
-        find_path(0, i + 1, val + m + 2);
-        find_path(1, i + 1, val + 2 * rd[i] + 1);
+        find_path(ld, rd, m, n, ans, 0, i + 1, val + m + 2);
+        find_path(ld, rd, m, n, ans, 1, i + 1, val + 2 * rd[i] + 1);
     }
     else
     {
-        find_path(0, i + 1, val + 2 * ld[i] + 1);
-        find_path(1, i + 1, val + m + 2);
+        find_path(ld, rd, m, n, ans, 0, i + 1, val + 2 * ld[i] + 1);
+        find_path(ld, rd, m, n, ans, 1, i + 1, val + m + 2);
     }
 }
 
 void solve()
 {
+    int n, m;
     cin >> n >> m;
+
+    string matrix[20];
+
     for (int i = n - 1; i >= 0; i--)
     {
         cin >> matrix[i];
     }
+
+    int ld[20], rd[20];
 
     int tmp = -1;
     // Generating prefix distance  each row
@@ -112,9 +113,9 @@ void solve()
     }
 
     // Ground floor
-    ans = LONG_LONG_MAX;
-    find_path(0, 1, 2 * ld[0] + 1);
-    find_path(1, 1, m + 2);
+    int ans = LONG_LONG_MAX;
+    find_path(ld, rd, m, n, ans, 0, 1, 2 * ld[0] + 1);
+    find_path(ld, rd, m, n, ans, 1, 1, m + 2);
     cout << ans << endl;
 }
 

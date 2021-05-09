@@ -51,7 +51,7 @@ int query(int *tree, int ss, int se, int qs, int qe, int index)
     return min(left, right);
 }
 
-void increment_range_update(int *tree, int ss, int se, int index, int increment, int l, int r)
+void range_update(int *tree, int ss, int se, int index, int increment, int l, int r)
 {
     // If does not lie in range
     if (r < ss || l > se)
@@ -67,8 +67,8 @@ void increment_range_update(int *tree, int ss, int se, int index, int increment,
     }
 
     int mid = ss + ((se - ss) / 2);
-    increment_range_update(tree, ss, mid, 2 * index, increment, l, r);
-    increment_range_update(tree, mid + 1, se, 2 * index + 1, increment, l, r);
+    range_update(tree, ss, mid, 2 * index, increment, l, r);
+    range_update(tree, mid + 1, se, 2 * index + 1, increment, l, r);
     tree[index] = min(tree[2 * index], tree[2 * index + 1]);
 }
 
@@ -80,7 +80,7 @@ void solve()
     int *tree = new int[4 * n + 1];
     build_tree(arr, 0, n - 1, 1, tree);
 
-    increment_range_update(tree, 0, n - 1, 1, +10, 3, 5);
+    range_update(tree, 0, n - 1, 1, +10, 3, 5);
 
     int q;
     cin >> q;

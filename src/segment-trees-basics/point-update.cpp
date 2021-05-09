@@ -51,15 +51,15 @@ int query(int *tree, int ss, int se, int qs, int qe, int index)
     return min(left, right);
 }
 
-void increment_update(int *tree, int ss, int se, int index, int increment, int at_index)
+void point_update(int *tree, int ss, int se, int index, int increment, int at_index)
 {
-    // If at_index does not lie in range, return element
+    // If at_index does not lie in range
     if (at_index < ss || at_index > se)
     {
         return;
     }
 
-    // Index found
+    // Leaf node
     if (ss == se)
     {
         tree[index] += increment;
@@ -68,8 +68,8 @@ void increment_update(int *tree, int ss, int se, int index, int increment, int a
 
     // If at_index lies in range, keep going deep
     int mid = ss + ((se - ss) / 2);
-    increment_update(tree, ss, mid, 2 * index, increment, at_index);
-    increment_update(tree, mid + 1, se, 2 * index + 1, increment, at_index);
+    point_update(tree, ss, mid, 2 * index, increment, at_index);
+    point_update(tree, mid + 1, se, 2 * index + 1, increment, at_index);
     tree[index] = min(tree[2 * index], tree[2 * index + 1]);
 }
 
@@ -81,7 +81,7 @@ void solve()
     int *tree = new int[4 * n + 1];
     build_tree(arr, 0, n - 1, 1, tree);
 
-    increment_update(tree, 0, n - 1, 1, +10, 3);
+    point_update(tree, 0, n - 1, 1, +10, 3);
 
     int q;
     cin >> q;

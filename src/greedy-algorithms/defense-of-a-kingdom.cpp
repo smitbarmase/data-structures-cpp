@@ -31,7 +31,7 @@ void solve()
 
     if (n == 0)
     {
-        cout << 0 << endl;
+        cout << w * h << endl;
         return;
     }
 

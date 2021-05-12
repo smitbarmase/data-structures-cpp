@@ -8,7 +8,7 @@
 
 - Use `ctrl + shift + b` to run task.
 
-### 🧠 Topic-wise problems (74)
+### 🧠 Topic-wise problems (91)
 
 Created using `npx create-layout`
 
@@ -27,14 +27,27 @@ Created using `npx create-layout`
   │ └─unique-number.cpp
   ├─combinatorics
   │ └─birthday-paradox.cpp
+  ├─divide-and-conquer
+  │ ├─binary-search-rotated-array.cpp
+  │ ├─binary-search.cpp
+  │ ├─book-allocation.cpp
+  │ ├─first-and-last-occurrence.cpp
+  │ ├─roti-prata.cpp
+  │ └─square-root.cpp
   ├─extra
-  │ ├─activity-selection.cpp
   │ ├─biggest-permutation.cpp
-  │ ├─binary-to-decimal.cpp
-  │ └─coin-change.cpp
+  │ └─binary-to-decimal.cpp
   ├─gcd-and-extended-euclidean
   │ ├─extended-euclidean.cpp
   │ └─gcd-and-lcm.cpp
+  ├─greedy-algorithms
+  │ ├─biased-standings.cpp
+  │ ├─busyman.cpp
+  │ ├─chopsticks.cpp
+  │ ├─defense-of-a-kingdom.cpp
+  │ ├─expedition.cpp
+  │ ├─indian-money-change.cpp
+  │ └─load-balancing.cpp
   ├─linear-diophantine-equation
   │ └─the-football-season!.cpp
   ├─linear-recurrences
@@ -99,6 +112,14 @@ Created using `npx create-layout`
   │ ├─generate-strings.cpp
   │ ├─generate-subsets.cpp
   │ └─phone-keypad.cpp
+  ├─segment-tree-lazy-propagation
+  │ ├─lazy-query.cpp
+  │ └─lazy-range-update.cpp
+  ├─segment-trees-basics
+  │ ├─point-update.cpp
+  │ ├─query.cpp
+  │ ├─range-update.cpp
+  │ └─segment-tree.cpp
   └─stl
     ├─hostel-visit.cpp
     ├─median-of-sorted.cpp

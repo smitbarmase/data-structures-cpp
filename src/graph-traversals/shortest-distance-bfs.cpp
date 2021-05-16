@@ -26,7 +26,7 @@ public:
         l[b].push_back(a);
     }
 
-    void bfs(T src)
+    void shortest_distance(T src)
     {
         map<T, int> dist;
         queue<T> q;
@@ -69,7 +69,7 @@ void solve()
     g.add_edge(3, 0);
     g.add_edge(3, 4);
     g.add_edge(4, 5);
-    g.bfs(0);
+    g.shortest_distance(0);
 }
 
 int32_t main()

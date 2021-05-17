@@ -8,7 +8,7 @@
 
 - Use `ctrl + shift + b` to run task.
 
-### 🧠 Topic-wise problems (91)
+### 🧠 Topic-wise problems (102)
 
 Created using `npx create-layout`
 
@@ -40,6 +40,21 @@ Created using `npx create-layout`
   ├─gcd-and-extended-euclidean
   │ ├─extended-euclidean.cpp
   │ └─gcd-and-lcm.cpp
+  ├─graph-basics
+  │ └─adjacency-list.cpp
+  ├─graph-traversals
+  │ ├─breadth-first-search.cpp
+  │ ├─connected-components.cpp
+  │ ├─depth-first-search.cpp
+  │ ├─holiday-accommodation.cpp
+  │ ├─journey-to-the-moon.cpp
+  │ ├─shortest-distance-bfs.cpp
+  │ └─snake-and-ladders.cpp
+  ├─graph-undirected
+  │ ├─check-biparted.cpp
+  │ ├─cycle-detection.cpp
+  │ ├─flood-fill.cpp
+  │ └─shortest-cycle.cpp
   ├─greedy-algorithms
   │ ├─biased-standings.cpp
   │ ├─busyman.cpp
@@ -58,8 +73,7 @@ Created using `npx create-layout`
   │ ├─modulo-exponentiation.cpp
   │ └─yet-another-counting-problem!.cpp
   ├─pigeonhole-principle
-  │ ├─divisible-subarrays.cpp
-  │ └─holiday-accomodation-!.cpp
+  │ └─divisible-subarrays.cpp
   ├─primes-and-factorization
   │ ├─almost-prime.cpp
   │ ├─bitset-sieve.cpp

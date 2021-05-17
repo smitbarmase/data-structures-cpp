@@ -26,28 +26,23 @@ public:
         l[b].push_back(a);
     }
 
+    void dfs_helper(T node, map<T, int> &visited)
+    {
+        cout << node << " ";
+        visited[node] = 1;
+        for (auto child : l[node])
+        {
+            if (!visited[child])
+            {
+                dfs_helper(child, visited);
+            }
+        }
+    }
+
     void dfs(T src)
     {
         map<T, int> visited;
-        stack<T> s;
-
-        s.push(src);
-        visited[src] = 1;
-
-        while (!s.empty())
-        {
-            T data = s.top();
-            cout << data << " ";
-            s.pop();
-            for (auto n : l[data])
-            {
-                if (!visited[n])
-                {
-                    s.push(n);
-                    visited[n] = 1;
-                }
-            }
-        }
+        dfs_helper(src, visited);
     }
 };
 

@@ -32,28 +32,20 @@ public:
         l[b].push_back(a);
     }
 
-    bool biparted_helper(T node, T parent, int *visited)
+    bool biparted_helper(T node, T parent, int *visited, int color)
     {
-        if (parent == -1)
-        {
-            visited[node] = 1;
-        }
-        else
-        {
-            visited[node] = visited[parent] == 1 ? 2 : 1;
-        }
-
+        visited[node] = color;
         for (auto child : l[node])
         {
             if (!visited[child])
             {
-                bool biparted = biparted_helper(child, node, visited);
+                bool biparted = biparted_helper(child, node, visited, 3 - color);
                 if (!biparted)
                 {
                     return false;
                 }
             }
-            else if (visited[child] == visited[node])
+            else if (child != parent && color == visited[child])
             {
                 return false;
             }
@@ -64,7 +56,7 @@ public:
     bool is_biparted()
     {
         int *visited = new int[n]{0};
-        return biparted_helper(0, -1, visited);
+        return biparted_helper(0, -1, visited, 1);
     }
 };
 
@@ -74,9 +66,10 @@ void solve()
     g.add_edge(0, 1);
     g.add_edge(1, 2);
     g.add_edge(2, 3);
-    // g.add_edge(3, 0);
+    g.add_edge(3, 0);
     g.add_edge(3, 4);
     g.add_edge(3, 5);
+    g.add_edge(0, 4); // makes cycle of odd length
     cout << g.is_biparted() << endl;
 }
 

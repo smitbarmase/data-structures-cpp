@@ -12,136 +12,136 @@
 
 Created using `npx create-layout`
 
-1. bit-manipulation
-   1. bit-tasks.cpp
-   2. decimal-to-binary.cpp
-   3. generate-subsets.cpp
-   4. inclusion-exclusion.cpp
-   5. power_optimization.cpp
-   6. repalce_bits_n_m.cpp
-   7. set_bits_count.cpp
-   8. unique-number-2.cpp
-   9. unique-number-3.cpp
-   10. unique-number.cpp
-2. combinatorics
-   1. birthday-paradox.cpp
-3. divide-and-conquer
-   1. binary-search-rotated-array.cpp
-   2. binary-search.cpp
-   3. book-allocation.cpp
-   4. first-and-last-occurrence.cpp
-   5. roti-prata.cpp
-   6. square-root.cpp
-4. dynamic-programming
-   1. fibonacci-bottom-up.cpp
-   2. fibonacci-top-down.cpp
-   3. minimum-steps-top-down.cpp
-5. extra
-   1. biggest-permutation.cpp
-   2. binary-to-decimal.cpp
-6. gcd-and-extended-euclidean
-   1. extended-euclidean.cpp
-   2. gcd-and-lcm.cpp
-7. graph-basics
-   1. adjacency-list.cpp
-8. graph-directed
-   1. cycle-detection.cpp
-   2. kosarajus-algorithm.cpp
-   3. topological-sort-bfs.cpp
-   4. topological-sort-dfs.cpp
-9. graph-traversals
-   1. breadth-first-search.cpp
-   2. connected-components.cpp
-   3. depth-first-search.cpp
-   4. holiday-accommodation.cpp
-   5. journey-to-the-moon.cpp
-   6. shortest-distance-bfs.cpp
-   7. snake-and-ladders.cpp
-10. graph-undirected
-    1. check-biparted.cpp
-    2. cycle-detection.cpp
-    3. flood-fill.cpp
-    4. shortest-cycle.cpp
-11. greedy-algorithms
-    1. biased-standings.cpp
-    2. busyman.cpp
-    3. chopsticks.cpp
-    4. defense-of-a-kingdom.cpp
-    5. expedition.cpp
-    6. indian-money-change.cpp
-    7. load-balancing.cpp
-12. linear-diophantine-equation
-    1. the-football-season!.cpp
-13. linear-recurrences
-    1. binary-exponentiation.cpp
-14. modulo
-    1. big-gcd.cpp
-    2. inverse-modulo.cpp
-    3. modulo-exponentiation.cpp
-    4. yet-another-counting-problem!.cpp
-15. pigeonhole-principle
-    1. divisible-subarrays.cpp
-16. primes-and-factorization
-    1. almost-prime.cpp
-    2. bitset-sieve.cpp
-    3. count-divisors.cpp
-    4. factorial-problem.cpp
-    5. large-prime-check.cpp
-    6. prime-between-a-and-b.cpp
-    7. prime-factorization-using-sieve.cpp
-    8. prime-factorization.cpp
-    9. product-of-three.cpp
-    10. segmented-prime-sieve.cpp
-    11. sieve-of-eratosthenes.cpp
-17. recursion-advanced-backtracking
-    1. n-queen-all.cpp
-    2. n-queen-bitmasking.cpp
-    3. n-queen-count.cpp
-    4. n-queen-optimization.cpp
-    5. sagheer-hausmeister.cpp
-18. recursion-backtracking
-    1. n-queen.cpp
-    2. permutations.cpp
-    3. rat-in-a-maze.cpp
-    4. sudoku-solver.cpp
-    5. unique-permutations.cpp
-19. recursion-basics
-    1. all-occurence.cpp
-    2. binary-search.cpp
-    3. bubble-sort.cpp
-    4. factorial.cpp
-    5. fast-power.cpp
-    6. fibonacci.cpp
-    7. first-occurence.cpp
-    8. increasing-decreasing.cpp
-    9. inversion-count.cpp
-    10. is-sorted.cpp
-    11. last-occurence.cpp
-    12. merge-sort.cpp
-    13. quick-sort.cpp
-20. recursion-quick-thinking
-    1. 2048-problem.cpp
-    2. friends-problem.cpp
-    3. ladders-problem.cpp
-    4. optimal-binary-strings.cpp
-    5. string-to-integer.cpp
-    6. tiling-problem.cpp
-    7. tower-of-hanoi.cpp
-21. recursion-subset-based
-    1. 01knapsack.cpp
-    2. generate-brackets.cpp
-    3. generate-strings.cpp
-    4. generate-subsets.cpp
-    5. phone-keypad.cpp
-22. segment-tree-lazy-propagation
-    1. lazy-query.cpp
-    2. lazy-range-update.cpp
-23. segment-trees-basics
-    1. point-update.cpp
-    2. query.cpp
-    3. range-update.cpp
-    4. segment-tree.cpp
-24. stl
-    1. hostel-visit.cpp
-    2. median-of-sorted.cpp
-    3. string-sort.cpp
+- bit-manipulation
+  - bit-tasks.cpp
+  - decimal-to-binary.cpp
+  - generate-subsets.cpp
+  - inclusion-exclusion.cpp
+  - power_optimization.cpp
+  - repalce_bits_n_m.cpp
+  - set_bits_count.cpp
+  - unique-number-2.cpp
+  - unique-number-3.cpp
+  - unique-number.cpp
+- combinatorics
+  - birthday-paradox.cpp
+- divide-and-conquer
+  - binary-search-rotated-array.cpp
+  - binary-search.cpp
+  - book-allocation.cpp
+  - first-and-last-occurrence.cpp
+  - roti-prata.cpp
+  - square-root.cpp
+- dynamic-programming
+  - fibonacci-bottom-up.cpp
+  - fibonacci-top-down.cpp
+  - minimum-steps-top-down.cpp
+- extra
+  - biggest-permutation.cpp
+  - binary-to-decimal.cpp
+- gcd-and-extended-euclidean
+  - extended-euclidean.cpp
+  - gcd-and-lcm.cpp
+- graph-basics
+  - adjacency-list.cpp
+- graph-directed
+  - cycle-detection.cpp
+  - kosarajus-algorithm.cpp
+  - topological-sort-bfs.cpp
+  - topological-sort-dfs.cpp
+- graph-traversals
+  - breadth-first-search.cpp
+  - connected-components.cpp
+  - depth-first-search.cpp
+  - holiday-accommodation.cpp
+  - journey-to-the-moon.cpp
+  - shortest-distance-bfs.cpp
+  - snake-and-ladders.cpp
+- graph-undirected
+  - check-biparted.cpp
+  - cycle-detection.cpp
+  - flood-fill.cpp
+  - shortest-cycle.cpp
+- greedy-algorithms
+  - biased-standings.cpp
+  - busyman.cpp
+  - chopsticks.cpp
+  - defense-of-a-kingdom.cpp
+  - expedition.cpp
+  - indian-money-change.cpp
+  - load-balancing.cpp
+- linear-diophantine-equation
+  - the-football-season!.cpp
+- linear-recurrences
+  - binary-exponentiation.cpp
+- modulo
+  - big-gcd.cpp
+  - inverse-modulo.cpp
+  - modulo-exponentiation.cpp
+  - yet-another-counting-problem!.cpp
+- pigeonhole-principle
+  - divisible-subarrays.cpp
+- primes-and-factorization
+  - almost-prime.cpp
+  - bitset-sieve.cpp
+  - count-divisors.cpp
+  - factorial-problem.cpp
+  - large-prime-check.cpp
+  - prime-between-a-and-b.cpp
+  - prime-factorization-using-sieve.cpp
+  - prime-factorization.cpp
+  - product-of-three.cpp
+  - segmented-prime-sieve.cpp
+  - sieve-of-eratosthenes.cpp
+- recursion-advanced-backtracking
+  - n-queen-all.cpp
+  - n-queen-bitmasking.cpp
+  - n-queen-count.cpp
+  - n-queen-optimization.cpp
+  - sagheer-hausmeister.cpp
+- recursion-backtracking
+  - n-queen.cpp
+  - permutations.cpp
+  - rat-in-a-maze.cpp
+  - sudoku-solver.cpp
+  - unique-permutations.cpp
+- recursion-basics
+  - all-occurence.cpp
+  - binary-search.cpp
+  - bubble-sort.cpp
+  - factorial.cpp
+  - fast-power.cpp
+  - fibonacci.cpp
+  - first-occurence.cpp
+  - increasing-decreasing.cpp
+  - inversion-count.cpp
+  - is-sorted.cpp
+  - last-occurence.cpp
+  - merge-sort.cpp
+  - quick-sort.cpp
+- recursion-quick-thinking
+  - 2048-problem.cpp
+  - friends-problem.cpp
+  - ladders-problem.cpp
+  - optimal-binary-strings.cpp
+  - string-to-integer.cpp
+  - tiling-problem.cpp
+  - tower-of-hanoi.cpp
+- recursion-subset-based
+  - 01knapsack.cpp
+  - generate-brackets.cpp
+  - generate-strings.cpp
+  - generate-subsets.cpp
+  - phone-keypad.cpp
+- segment-tree-lazy-propagation
+  - lazy-query.cpp
+  - lazy-range-update.cpp
+- segment-trees-basics
+  - point-update.cpp
+  - query.cpp
+  - range-update.cpp
+  - segment-tree.cpp
+- stl
+  - hostel-visit.cpp
+  - median-of-sorted.cpp
+  - string-sort.cpp

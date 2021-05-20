@@ -14,8 +14,25 @@ using namespace std;
 #define mod 1000003
 #define inf 1e18
 
+// Input
+// 6
+// 5 3
+// 10 9
+// 99 87
+// 23 34
+// 66 23
+// 23 12
+
+// Output
+// 2
+// 1
+// 185141
+// 0
+// 375215
+// 84498
+
 int n, k;
-int dp[1002][1002][2];
+int dp[100][100][2];
 
 int get_possible(int i, int sum, int prev)
 {
@@ -35,6 +52,7 @@ int get_possible(int i, int sum, int prev)
     int ways = 0;
     // current = 1
     ways += get_possible(i - 1, sum + prev, 1);
+    ways %= mod;
     // current = 0
     ways += get_possible(i - 1, sum, 0);
     ways %= mod;

@@ -16,21 +16,21 @@ using namespace std;
 
 int n;
 int arr[3001];
-int dp[3001][3001][2];
+int dp[3001][3001];
 
-int maximize_diff(int i, int j, int c)
+int maximize_diff(int i, int j)
 {
     if (i > j)
     {
         return 0;
     }
-    if (dp[i][j][c] != -1)
+    if (dp[i][j] != -1)
     {
-        return dp[i][j][c];
+        return dp[i][j];
     }
-    int first = arr[i] - maximize_diff(i + 1, j, !c);
-    int last = arr[j] - maximize_diff(i, j - 1, !c);
-    return dp[i][j][c] = max(first, last);
+    int first = arr[i] - maximize_diff(i + 1, j);
+    int last = arr[j] - maximize_diff(i, j - 1);
+    return dp[i][j] = max(first, last);
 }
 
 void solve()
@@ -43,7 +43,7 @@ void solve()
 
     memset(dp, -1, sizeof dp);
 
-    cout << maximize_diff(0, n - 1, 0) << endl;
+    cout << maximize_diff(0, n - 1) << endl;
 }
 
 int32_t main()
